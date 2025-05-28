@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "b90fb2ce-a87a-4925-943d-9cd90f7a2ba8",
+		"name": "Interview",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11190840",
+		"_collection_link": "https://azim-gu.postman.co/workspace/Team-Workspace~22f621d2-3dd7-435d-8094-6f901e6cdb47/collection/11190840-b90fb2ce-a87a-4925-943d-9cd90f7a2ba8?action=share&source=collection_link&creator=11190840"
+	},
+	"item": [
+		{
+			"name": "datasheet assignment",
+			"item": [
+				{
+					"name": "Insert data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/search?name=Azi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Azi"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get policy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/v1/getPolicy",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"getPolicy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "schedule message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"message\": \"Hello Azim\",\n  \"date\": \"2025-05-29\",\n  \"time\": \"14:30\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/v1/schedule-insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"v1",
+								"schedule-insert"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
